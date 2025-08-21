@@ -1,0 +1,149 @@
+@font-face {
+    font-family: khmer;
+    src: url(./font/KH-BATTAMBANG.TTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: khmer;
+}
+body{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container{
+    padding: 20px;
+    width: 700px;
+    min-width: 400px;
+    background: linear-gradient(#33A1E0,#97bbd1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+header h1{
+    color: rgba(255, 255, 255, 0.888);
+}
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+header nav h2 {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+  color: #6bafc2;
+}
+.active-btn{
+    background-color: rgba(134, 171, 203, 0.422);
+}
+
+.scient-form,.socail-form {
+    background-color:aliceblue ;
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 1rem;
+}
+.inactive-form{
+    display: none;
+}
+input{
+    width: 100%;
+    padding: 10px 5px;
+}
+.calculate-btn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 1rem;
+    padding: 10px;
+    background-color:#33A1E0 ;
+    color: white;
+    cursor: pointer;
+}
+.calculate-btn:hover{
+    background-color:#33a1e0dd;
+
+}
+
+.display-result{
+    width: 100%;
+    text-align: center;
+    display: none;
+    margin-top: 1rem;
+    line-height: 3rem;
+    color: black;
+    background-color:aliceblue ;
+    padding: 1rem;
+}
+.display-result h3{
+    color: gray;
+}
+.subject-grade{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.subject-grade div,.back-btn{
+    background-color: #BBDCE5;
+    padding: 10px;
+}
+
+label{
+    cursor: pointer;
+}
+.back-btn{
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #33A1E0;
+}
+.back-btn:hover{
+   background-color: #4e9cc9;
+}
+.alert-error,.alert-error2{
+    font-size: 1.2rem;
+    color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    display: none;
+}
+strong {
+  color: #33A1E0; /* blue grade letter */
+}
+
+.total-score{
+    color: #007bff;
+}
+@media only screen and (max-width: 600px) {
+  .scient-form,.socail-form{
+    grid-template-columns: 1fr;
+  }
+  .calculate-btn,.alert-error,.alert-error2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+   }
+   .alert-error,.alert-error2{
+    font-size: 1rem;
+   }
+}

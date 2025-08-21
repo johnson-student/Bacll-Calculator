@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BACll CALCULATE</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>គណនាពិន្ទុបាក់ឌុប</h1>
+            <nav>
+                <h2 class="scient-btn active-btn">វិទ្យាសាស្ត្រ</h2>
+                <h2 class="socail-btn">សង្គម</h2>
+                <h2>បទប្បញ្ញត្តិ</h2>
+            </nav>
+        </header>
+        <form class="scient-form">
+            <div>
+                <label for="khmer">អក្សរសិល្ប៍ខ្មែរ (ពិន្ទុពេញ 75)</label><br>
+                <input type="number" class="subject-1" id="khmer" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="math">គណិតវិទ្យា (ពិន្ទុពេញ 125)</label><br>
+                <input type="number" class="subject-2" id="math" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="physic">រូបវិទ្យា (ពិន្ទុពេញ 75)</label><br>
+                <input type="number" class="subject-3" id="physic" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="chemistry">គីមីវិទ្យា (ពិន្ទុពេញ 75)</label><br>
+                <input type="number" class="subject-4" id="chemistry" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="bio">ជីវវិទ្យា (ពិន្ទុពេញ 75)</label><br>
+                <input type="number" class="subject-5" id="bio" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="history">មុខវិជ្ជាជម្រើស (ពិន្ទុពេញ 50)</label><br>
+                <input type="number" class="subject-6" id="history" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="english">ភាសាបរទេស (ពិន្ទុពេញ 50)</label><br>
+                <input type="number" class="subject-7" id="english" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div class="alert-error"></div>
+            <button type="submit" class="calculate-btn">គណនា</button>
+        </form>
+        <form class="socail-form inactive-form">
+            <div>
+                <label for="khmer">អក្សរសិល្ប៍ខ្មែរ (ពិន្ទុពេញ 125)</label><br>
+                <input type="number" class="subject-1" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="math">គណិតវិទ្យា (ពិន្ទុពេញ 75)</label><br>
+                <input type="number" class="subject-2" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="khmer">ភូមិវិទ្យា (ពិន្ទុពេញ 75)</label><br>
+                <input type="number" class="subject-3" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="khmer">ប្រវត្តិវិទ្យា (ពិន្ទុពេញ 75)</label><br>
+                <input type="number" class="subject-4" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="khmer">សីលធម៌-ពលរដ្ឋ (ពិន្ទុពេញ 75)</label><br>
+                <input type="number" class="subject-5" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="khmer">មុខវិជ្ជាជម្រើស (ពិន្ទុពេញ 50)</label><br>
+                <input type="number" class="subject-6" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div>
+                <label for="khmer">ភាសាបរទេស (ពិន្ទុពេញ 50)</label><br>
+                <input type="number" class="subject-7" placeholder="បញ្ចូលពិន្ទុ">
+            </div>
+            <div class="alert-error2"></div>
+            <button type="submit" class="calculate-btn">គណនា</button>
+        </form>
+        <div class="display-result">
+            <h2><b>លទ្ធផលសរុប</b></h2>
+            <h3>ពិន្ទុសរុប: <span class="total-score"></span></h3>
+            <h3>លទ្ធផល: <span class="result"></span></h3>
+            <h3>និទ្ទេស: <span class="grade"></span></h3>
+            <h2 class="comment"></h2>
+
+            <hr style=" border-top: 2px solid gainsboro; margin: 10px 0;">
+
+            <h2>និទ្ទេសតាមមុខវិជ្ជា</h2>
+            <div class="subject-grade">
+                
+            </div>
+            <button class="back-btn">គណនាម្ដងទៀត</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -114,6 +114,7 @@ label{
 }
 .back-btn{
     margin-top: 1rem;
+    padding: 15px 50px;
     cursor: pointer;
     background-color: #33A1E0;
 }

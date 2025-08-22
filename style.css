@@ -16,6 +16,8 @@ body{
     display: flex;
     justify-content: center;
     padding: 20px;
+
+    background-color: white;
 }
 .container{
     padding: 20px;
@@ -104,7 +106,7 @@ input{
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-.subject-grade div,.back-btn{
+.subject-grade div{
     background-color: #BBDCE5;
     padding: 10px;
 }
@@ -113,7 +115,9 @@ label{
     cursor: pointer;
 }
 .back-btn{
+    padding: 10px;
     margin-top: 1rem;
+    color: aliceblue;
     padding: 15px 50px;
     cursor: pointer;
     background-color: #33A1E0;
